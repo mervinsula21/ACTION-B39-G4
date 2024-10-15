@@ -1,5 +1,7 @@
 package classes;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class App {
@@ -45,8 +47,11 @@ public class App {
         String description = scanner.nextLine();
         System.out.print("Enter task deadline (YYYY-MM-DD): ");
         String deadline = scanner.nextLine();
+        
+        System.out.print("Enter task priority (Low, Medium, High): ");
+        String priority = scanner.nextLine();
 
-        Task task = new Task(description, deadline);
+        Task task = new Task(description, deadline, priority);
         taskManager.addTask(task);
         System.out.println("Task added successfully.");
     }
