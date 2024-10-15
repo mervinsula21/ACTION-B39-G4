@@ -31,6 +31,8 @@ public class Task {
 		
 	}
 	public int getId() {
+		return id;
+	}
 	public boolean isCompleted() {
 		return isCompleted;
 	}
